@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+/*Header Section*/
+#header{
+    position: fixed;
+    left: 50px;
+    top: 0;
+/*    background-color: #BB6504;*/
+/*    background-size: cover;*/
+}
+#header .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    
+}
+.header .header-logo{
+    font-size: 1.1rem;
+    font-family: 'Lobster', cursive;
+    margin-right: 15px;
+}
+.header .header-search input {
+/*    background-color: aqua;*/
+    width: 150px;
+    height: 30px;
+    border: 1px solid gray;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+.header .header-search input[type="text"]{
+    text-align: center;
+    font-size: .9rem;
+    color: antiquewhite;
+    font-family: 'Lobster', cursive;
+}
+.header .header-menu{
+    margin-right: 330px;
+}
+.header .header-menu ul{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+.header .header-menu ul li,
+.header .header-login-reg ul li{
+    margin-right: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.header .header-login-reg{
+   
+}
+.header .header-login-reg ul{
+    display: flex;
+    flex-direction: row;
+}
+.header a{
+    color:darkblue;
+}
+
+/*End Header Section*/
+
+/*Slogan Section*/
+#slogan {
+    background-image: url(img/hero-bg.png);
+    background-size: cover;
+    background-position: top center;
+    min-height: 90vh;
+    width: 100%;
+}
+#slogan .slogan{
+/*    background-image: url(img/hero-bg.png);*/
+/*    background-size: cover;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slogan .slogan-text{
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    margin-top: 120px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+}
+.slogan .slogan-buttons{
+/*    background-color: aqua;*/
+    display: flex;
+    padding: 50px 0px;
+    
+}
+.slogan .slogan-buttons .post-jobs{
+    padding: 0px 20px;
+    
+}
+.slogan .slogan-buttons .post-jobs a,
+.slogan .slogan-buttons .apply-as-freelancer a{
+    padding: 10px 20px;
+    border: 2px solid darkblue;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+/*    width: 30px;*/
+/*    font-family: 'Lobster', cursive;*/
+/*background-image: linear-gradient(90deg, #121519 50%, #0dd3ec 50%);*/
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.slogan .slogan-buttons .apply-as-freelancer{
+    padding: 0px 20px;
+/*    width: 380px;*/
+}
+
+.slogan .slogan-buttons .post-jobs a:hover,
+.slogan .slogan-buttons .apply-as-freelancer a:hover
+{
+/*background-image: linear-gradient(180deg, #121519 50%, #0dd3ec 50%);*/
+    box-shadow: 0px 0px 5px 0px crimson;
+}
+/*End Slogan Section*/
+
+/*Feature Section*/
+#features .features{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0px;
+}
+.features .features-header{
+/*    display: flex;*/
+/*    justify-content: center;*/
+    text-align: center;
+    width: 320px;
+    margin: 30px auto;
+    
+}
+.features .features-header h1{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .08rem;
+/*    background-color: aquamarine;*/
+    
+}
+.features .features-list{
+    display: flex;
+    flex-direction: row;
+ align-items: center;
+    justify-content: center;
+/*    background-color: brown;*/
+}
+.features .features-list .feature-wrapper{
+/*    padding: 15px 20px;*/
+/*    background-color: aqua;*/
+/*    flex-basis: 50%;*/
+    padding: 20px 0px;
+} 
+.features .features-list .feature{
+    border: 1px solid rgba(0,0,0,0.23);
+    margin: 0px 30px;
+    padding: 0px 20px;
+    flex-basis: 20%;
+    height: 270px;
+/*    background-color: aqua;*/
+}
+.features .features-list .feature:nth-child(2) .feature-desc p{
+    font-size: .9rem;
+/*    margin-bottom: 10px;*/
+}
+.features .features-list .feature .feature-img{
+    padding: 5px;
+}
+.features .features-list .feature .feature-img img{
+    height: 60px;
+    width: 100%;
+}
+.features .features-list .feature .feature-title{
+    text-align: center;
+    padding: 5px 0px;
+    font-weight: 700;
+    text-transform:capitalize;
+    letter-spacing: .03rem;
+    font-family: 'Fondamento', cursive;
+}
+
+.features .features-list .feature .feature-desc{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Slabo 27px', serif;
+}
+/*End Feature Section*/
+
+/*Microjobs Section*/
+#microjobs .microjobs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.microjobs .microjobs-header{
+    font-size: 1.3rem;
+    margin: 50px auto;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Arvo', serif;
+}
+.microjobs .microjob-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.microjobs .microjob-list .microjob{
+    border: 1px solid rgba(0,0,0,0.234);
+    margin: 10px 10px;
+    width: 250px;
+    height: 350px;
+}
+.microjobs .microjob-list .microjob .microjob-upper{
+    height: 70%;
+}
+.microjobs .microjob-list .microjob .microjob-upper .microjob-img img{
+    margin-bottom: 10px;
+    height: 150px;
+    width: 250px;
+    
+}
+.microjobs .microjob-list .microjob .microjob-upper .microjob-title {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.microjobs .microjob-list .microjob .name{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+border-bottom: 1px solid rgba(0,0,0,0.234);
+}
+.microjobs .microjob-list .microjob .name h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Slabo 27px', serif;
+}
+.microjobs .microjob-list .microjob-title h1{
+/*background-color: aqua;*/
+    font-size: 1.1rem;
+    padding: 3px;
+    font-family: 'Fondamento', cursive;
+    color: black;
+}
+.microjobs .microjob-list .microjob .rating-amount{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.microjobs .microjob-list .microjob .rating{
+   flex-basis: 65%;
+    
+}
+.microjobs .microjob-list .microjob .amount{
+   font-weight: 300;
+    font-size: .8rem;
+    
+}
+.microjobs .microjob-list .microjob .amount h1{
+   font-weight: 500;
+    font-size: 1.3rem;
+    
+}
+/*End Microjobs Section*/
+
+/*Job Categories Section*/
+#category .category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.category .categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.category .category-header h1{
+        font-size: 1.3rem;
+    margin: 50px auto;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Arvo', serif;
+}
+.category .categories .category-item{
+    flex-basis: 20%;
+    border: 1px solid rgba(0,0,0,0.234);
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+/*    width: 250px;*/
+}
+
+.category .categories .category-item img{
+    margin: 10px 5px;
+    padding: 10px;
+}
+.category .categories .category-item h1{
+    margin: 10px 5px;
+    padding-bottom: 25px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 1.3rem;
+}
+.category  .category-show-more,
+.microjobs .microjob-see-all,
+.jobs .see-all-jobs{
+    padding: 40px;
+    text-transform: uppercase;
+    
+}
+.category  .category-show-more:hover h1 a,
+.microjobs .microjob-see-all:hover h1 a,
+.jobs .see-all-jobs:hover h1 a{
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(0,0,0,0.734);
+    cursor: pointer;
+}
+.category  .category-show-more h1 a,
+.microjobs .microjob-see-all h1 a,
+.jobs .see-all-jobs h1 a{
+/*    padding: 20px;*/
+   border: 1px solid rgba(0,0,0,0.234);
+    padding: 8px;
+    background-color: black;
+    color: white;
+    
+}
+/*End Job Categories Section*/
+
+
+
+/*Freelance Job List section*/
+#jobs .jobs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.jobs .jobs-header{
+    
+}
+.jobs .jobs-header h1{
+    font-size: 1.3rem;
+    margin: 50px auto;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Arvo', serif;
+}
+.jobs .job-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    width: 100%;
+}
+.jobs .job-list .job{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    border: 1px solid rgba(0,0,0,0.234);
+    margin: 10px auto;
+    width: 100%;
+}
+.jobs .job-list .job .job-name{
+/*    margin-right:40%;*/
+/*    width: 40%;*/
+    padding: 0px 10px;
+    flex-basis: 55%;
+}
+.jobs .job-list .job .job-name h1{
+ font-size: 1.4rem;
+    text-transform:capitalize;
+    font-weight: 500;
+    letter-spacing: .01rem;
+}
+.jobs .job-list .job .job-date,
+.jobs .job-list .job .job-amount,
+.jobs .job-list .job .job-see{
+flex-basis: 13%;
+    margin: 0px 18px;
+
+}
+.jobs .job-list .job .job-date h1,
+.jobs .job-list .job .job-amount h1,
+.jobs .job-list .job .job-see h1{
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .01rem;
+    text-transform:capitalize;
+    
+}
+.jobs .job-list .job .job-see h1{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+/*    background-color: rgba(0,0,0,0.014);*/
+    background-color: #49CF51 ;
+    
+}
+/*
+.jobs .job-list .job .job-see:hover .jobs .job-see h1 a{
+    background-color: white;
+    color: #49CF51;
+}
+*/
+.jobs .job-list .job .job-amount h1{
+    font-weight: 700;
+}
+.jobs .job-list .job .job-see h1 a{
+    color: white;
+    text-transform: uppercase;
+}
+
+/*End Freelance Job List Section*/
+
+
+/*Footer Section*/
+#footer{
+    background-color: rgba(0,0,0,0.567);
+}
+#footer .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+     color: white;
+}
+.footer .col-left{
+    padding: 0px 30px;
+}
+.footer .col-left h1{
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+.footer .col-middle{
+    padding: 10px 100px;
+    text-align: center;
+    font-size: .8rem;
+}
+.footer .col-middle .upper-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: .6rem;
+    font-weight: 300;
+}
+.footer .col-middle .upper-part h1 a{
+    color: white;
+    padding: 8px;
+/*    text-decoration: underline;*/
+
+/*    border-right: 1px solid white;*/
+}
+
+.footer .col-middle .lower-part h1{
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: 'Fondamento', cursive;
+}
+.footer .col-right{
+    padding: 5px 40px;
+    color: white;
+}
+.footer .col-right div:last-child{
+    margin-top: 8px;
+}
+.footer .col-right div img{
+    height: 30px;
+    width: 30px;
+    padding:  10px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+/*End Footer section*/
