@@ -47,3 +47,30 @@ close_btn.addEventListener('click',()=>{
 //});
 //}
 //}
+const left_skill_list=document.querySelector('.resume .resume-skill-1 .col-left .left-skill-list');
+const right_skill_list=document.querySelector('.resume .resume-skill-1 .col-right .right-skill-list');
+const left_skill_header=document.querySelector('.resume .resume-skill-1 .col-left .left-skill-header');
+
+right_skill_header=document.querySelector('.resume .resume-skill-1 .col-right .right-skill-header');
+//left-icon=document.querySelector('.resume .resume-skill-1 .col-left .left-skill-header i');
+//right-icon=document.querySelector('.resume .resume-skill-1 .col-right .right-skill-header i');
+
+left_skill_header.addEventListener('click',function(){
+    if(left_skill_list.style.maxHeight){
+        left_skill_list.style.maxHeight=null;
+    }
+    else {
+        left_skill_list.style.maxHeight=left_skill_list.scrollHeight + "px";
+//        left_icon.style.transform="rotate(180deg)";
+    }
+});
+
+
+right_skill_header.addEventListener('click',function(){
+    if(right_skill_list.style.maxHeight){
+        right_skill_list.style.maxHeight=null;
+    }
+    else {
+        right_skill_list.style.maxHeight=right_skill_list.scrollHeight + "px";
+    }
+});

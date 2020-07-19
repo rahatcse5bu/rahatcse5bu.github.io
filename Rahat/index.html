@@ -86,7 +86,7 @@
         <h1>Md. Rahat</h1>
     </div>
     <div class="part-3">
-        <h1>I am a Web Developer</h1>
+        <h1>I am </h1><span></span>
     </div>
     <div class="part-4">
         <i class="fab fa-facebook"></i>
@@ -477,7 +477,7 @@
     <div class="resume-skill-1">
         <div class="col-left">
             <div class="left-skill-header">
-                <h1>Coding Skill</h1>
+                <h1>Coding Skill<i class="fas fa-chevron-down"></i></h1>
             </div>
             <div class="left-skill-list">
                 <div class="item">
@@ -532,7 +532,7 @@
         
         <div class="col-right">
             <div class="right-skill-header">
-                <h1>Language Skill</h1>
+                <h1>Language Skill<i class="fas fa-chevron-down"></i></h1>
             </div>
             <div class="right-skill-list">
                 <div class="item">
@@ -885,18 +885,28 @@
     </div>
 </section>
 <!--End Contact Section-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <script type="text/javascript" src="rahat.js"></script>
 <script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("map"),mapProp);
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcNVtgIqmIr-jQPFGcitLcrvVl5XtYUmg&callback=myMap"></script>
 </body>
 </html>
