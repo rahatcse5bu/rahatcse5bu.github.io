@@ -15,15 +15,17 @@ html{
 /*Side Bar Section*/
 
 #sidebar .sidebar{
-     background-color:darkblue;  
+/*     background-color:darkblue;  */
     position:fixed;
-/*    top: 0;*/
+    top: 0;
     left: 0;
      width: 250px;
     color: white;
     padding: 8px 25px;
-
+    overflow-y: scroll;
     height: 1000px;
+    background-color: #000;
+    
 }
 .sidebar .sidebar-head{
     width: 100%;
@@ -133,6 +135,35 @@ font-size: 1.4rem;
     font-size: 2.1rem;
     color: white;
 }
+.home .part-3 h1::after{
+content: '';
+color: blueviolet;
+    animation: txt_reveal infinite 4s;
+/*   overflow: hidden;*/
+/*    white-space: nowrap;*/
+/*    border-right: 4px solid black;*/
+/*    animation: typing  infinite 3s steps(4);*/
+}
+@keyframes txt_reveal{
+    0%{
+       content: 'a Web Designer'; 
+         
+    }
+    100%{
+        content: 'a Web Developer';
+         
+    }
+}
+/*
+@keyframes typing{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 14px;
+    }
+}
+*/
 .home .part-4{
     display: flex;
     flex-direction: row;
@@ -148,6 +179,7 @@ font-size: 1.4rem;
     padding: 15px;
     border: 1px solid white;
     border-radius: 50%;
+    cursor: pointer;
 
 }
 .home .part-5{
