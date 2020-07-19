@@ -134,8 +134,12 @@ font-size: 1.4rem;
 .home .part-3 h1{
     font-size: 2.1rem;
     color: white;
+    display: inline;
 }
-.home .part-3 h1::after{
+.part-3 span{
+    font-size: 2.1rem;
+}
+.home .part-3  span::before{
 content: '';
 color: blueviolet;
     animation: txt_reveal infinite 4s;
