@@ -89,7 +89,12 @@ font-size: 1.4rem;
 }
 
 /*End side Bar Section*/
-
+/*Hamburger Section*/
+    .hamburger{
+ display: none;
+        
+    }
+/*End Hamburger Section*/
 /*Home Section*/
 #home{
     background-image: url(img/home-bg.jpg);
@@ -1236,12 +1241,15 @@ display: flex;
         color: white;
         z-index: 5;
         text-decoration: none;
+      display: block;
+        
     }
     .hamburger .fa-times  {
         display: none;
     }
     .hamburger .fa-bars  {
         position: sticky;
+        display: block;
 
     }
     #sidebar .sidebar{
