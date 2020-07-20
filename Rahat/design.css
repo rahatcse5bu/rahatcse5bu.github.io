@@ -568,15 +568,16 @@ font-weight: 500;
 }
 
 .resume .resume-skill-1{
-    display: flex;
-    flex-direction: row;
+/*    display: flex;*/
+/*    flex-direction: row;*/
     width: 100%;
     color: white;
+    height: auto;
     
 }
 .resume .resume-skill-1 .col-left{
     flex-basis: 50%;
-    margin: 5px 20px;
+    margin: 25px 20px;
     background-color: #353353;
     border: 1px solid rgba(0,0,0,0.234);
     border-radius: 10px;
@@ -598,6 +599,7 @@ font-weight: 500;
     height: 30px;
     width: 30px;
     text-align: center;
+    transition: .7s ease-in-out transform;
 }
 .resume .resume-skill-1 .col-left .left-skill-list{
     padding: 10px 0px;
@@ -971,7 +973,11 @@ padding: 0px 10px;
 /*    margin: 10px 0px;*/
 /*    padding: 5px 0px;*/
 }
+.portfolio .portfolio-main .list .item .item-main p{
 
+    margin: 15px 0px;
+/*    padding: 5px 0px;*/
+}
 /*
 .portfolio .portfolio-main .list .item .img-wrapper{
 position: relative;
