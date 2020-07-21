@@ -127,7 +127,7 @@ font-size: 1.4rem;
     
 }
 .home .part-2 h1{
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     font-family: 'Fondamento', cursive;
     color: white;
@@ -148,6 +148,7 @@ font-size: 1.4rem;
 content: '';
 color: blueviolet;
     animation: txt_reveal infinite 4s;
+    font-size: 1.5rem;
 /*   overflow: hidden;*/
 /*    white-space: nowrap;*/
 /*    border-right: 4px solid black;*/
@@ -214,6 +215,7 @@ color: blueviolet;
 /* padding: 5px;*/
     text-transform: uppercase;
     color: white;
+font-size: 1.1rem;
 }
 
 @keyframes button_effect{
@@ -260,7 +262,7 @@ span{
     color: chocolate;
 }
 .about .about-header h1{
-    font-size: 4.2rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
         text-align: center;
     padding-top: 20px;
@@ -315,6 +317,7 @@ span{
     color: white;
     background-color: blueviolet;
     border-radius: 5px;
+    font-size: 1.2rem;
     
 }
 .about .about-main .col-right .part-3 h1:hover{
@@ -436,6 +439,10 @@ padding: 10px 0px;
     padding: 20px 0px;
     color: white;
 }
+.services .services-header h1{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
 .services .service{
     display: flex;
     flex-direction: row;
@@ -465,10 +472,7 @@ padding: 10px 0px;
 .services .service .service-item p{
     line-height: 1.5rem;
 }
-.services .services-header h1{
-    font-size: 3rem;
-    text-transform: uppercase;
-}
+
 /*End Service Section*/
 
 
@@ -496,7 +500,7 @@ padding: 10px 0px;
     padding: 20px 0px;
 }
 .resume .resume-header h1{
-    font-size: 3.8rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
     color: white;
 }
@@ -908,7 +912,7 @@ padding: 0px 10px;
     width: 100%;
 }
 .portfolio .portfolio-header h1{
-    font-size: 4.2rem;
+    font-size: 2.3rem;
     padding: 20px 0px;
     text-transform: uppercase;
     color: white;
@@ -1042,6 +1046,9 @@ position: relative;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
+.portfolio .portfolio-main .list .item .item-main  .explore h1{
+ font-size: 1.2rem;
+}
 .portfolio .portfolio-main .list .item .item-main  .explore:hover {
     background-color: black;
     cursor: pointer;
@@ -1147,7 +1154,8 @@ display: flex;
     margin: 20px 0px;
     width: 80%;
     text-align: center;
-    background-color: blueviolet
+    background-color: blueviolet;
+    font-size: 1.5rem;
 }
 .contact .col-left .part-4 h1:hover {
     background-color:cornflowerblue;
@@ -1175,6 +1183,7 @@ display: flex;
     text-transform: uppercase;
     padding: 5px 0px;
  font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.1rem;
     
 }
 .contact .col-right .part-2{
@@ -1186,6 +1195,7 @@ display: flex;
     padding: 5px 0px;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
 }
 .contact .col-right .part-3{
 /*    border-bottom: 1px solid white;*/
@@ -1196,6 +1206,7 @@ display: flex;
     padding: 5px 0px;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
 }
 .contact .col-right .part-4{
 /*    border-bottom: 1px solid white;*/
@@ -1206,6 +1217,7 @@ display: flex;
     padding: 5px 0px;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
 }
 .contact .col-right .part-5{
 /*    border-bottom: 1px solid white;*/
@@ -1216,6 +1228,7 @@ display: flex;
     padding: 5px 0px;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
 }
 .contact .col-right .part-6{
 /*    border-bottom: 1px solid white;*/
@@ -1226,6 +1239,7 @@ display: flex;
     padding: 5px 0px;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
 }
 /*End Contact Section*/
 
